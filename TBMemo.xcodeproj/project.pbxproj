@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A70A20A2177A8FCA00D1251B /* TBMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70A20A1177A8FCA00D1251B /* TBMemoViewController.m */; };
+		A716B3F61777D840001C3026 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A716B3F51777D83F001C3026 /* UIKit.framework */; };
+		A716B3F81777D840001C3026 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A716B3F71777D840001C3026 /* Foundation.framework */; };
+		A716B3FA1777D840001C3026 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A716B3F91777D840001C3026 /* CoreGraphics.framework */; };
+		A716B4001777D840001C3026 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A716B3FE1777D840001C3026 /* InfoPlist.strings */; };
+		A716B4021777D840001C3026 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A716B4011777D840001C3026 /* main.m */; };
+		A716B4061777D840001C3026 /* TBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A716B4051777D840001C3026 /* TBAppDelegate.m */; };
+		A716B4081777D840001C3026 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A716B4071777D840001C3026 /* Default.png */; };
+		A716B40A1777D840001C3026 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A716B4091777D840001C3026 /* Default@2x.png */; };
+		A716B40C1777D840001C3026 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A716B40B1777D840001C3026 /* Default-568h@2x.png */; };
+		A716B40F1777D840001C3026 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A716B40D1777D840001C3026 /* MainStoryboard.storyboard */; };
+		A716B4121777D840001C3026 /* TBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A716B4111777D840001C3026 /* TBViewController.m */; };
+		A759E7771779DB2400FBDD2A /* TBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A759E7751779DB2400FBDD2A /* TBModel.xcdatamodeld */; };
+		A759E77D1779DBC700FBDD2A /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = A759E77C1779DBC700FBDD2A /* Memo.m */; };
+		A759E77F1779DC1700FBDD2A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A759E77E1779DC1700FBDD2A /* CoreData.framework */; };
+		A759E782177A61F800FBDD2A /* TBStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A759E781177A61F800FBDD2A /* TBStoreManager.m */; };
+		A790E84F177D84C3009D404F /* UITextView+MessagesKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = A790E84E177D84C3009D404F /* UITextView+MessagesKeyboard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A70A20A0177A8FCA00D1251B /* TBMemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMemoViewController.h; sourceTree = "<group>"; };
+		A70A20A1177A8FCA00D1251B /* TBMemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMemoViewController.m; sourceTree = "<group>"; };
+		A716B3F21777D83F001C3026 /* TBMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A716B3F51777D83F001C3026 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A716B3F71777D840001C3026 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A716B3F91777D840001C3026 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A716B3FD1777D840001C3026 /* TBMemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TBMemo-Info.plist"; sourceTree = "<group>"; };
+		A716B3FF1777D840001C3026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A716B4011777D840001C3026 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A716B4031777D840001C3026 /* TBMemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBMemo-Prefix.pch"; sourceTree = "<group>"; };
+		A716B4041777D840001C3026 /* TBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBAppDelegate.h; sourceTree = "<group>"; };
+		A716B4051777D840001C3026 /* TBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBAppDelegate.m; sourceTree = "<group>"; };
+		A716B4071777D840001C3026 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A716B4091777D840001C3026 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A716B40B1777D840001C3026 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A716B40E1777D840001C3026 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A716B4101777D840001C3026 /* TBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBViewController.h; sourceTree = "<group>"; };
+		A716B4111777D840001C3026 /* TBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBViewController.m; sourceTree = "<group>"; };
+		A759E7761779DB2400FBDD2A /* TBModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TBModel.xcdatamodel; sourceTree = "<group>"; };
+		A759E77B1779DBC700FBDD2A /* Memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
+		A759E77C1779DBC700FBDD2A /* Memo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memo.m; sourceTree = "<group>"; };
+		A759E77E1779DC1700FBDD2A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A759E780177A61F800FBDD2A /* TBStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBStoreManager.h; sourceTree = "<group>"; };
+		A759E781177A61F800FBDD2A /* TBStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBStoreManager.m; sourceTree = "<group>"; };
+		A790E84D177D84C3009D404F /* UITextView+MessagesKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+MessagesKeyboard.h"; sourceTree = "<group>"; };
+		A790E84E177D84C3009D404F /* UITextView+MessagesKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+MessagesKeyboard.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A716B3EF1777D83F001C3026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A759E77F1779DC1700FBDD2A /* CoreData.framework in Frameworks */,
+				A716B3F61777D840001C3026 /* UIKit.framework in Frameworks */,
+				A716B3F81777D840001C3026 /* Foundation.framework in Frameworks */,
+				A716B3FA1777D840001C3026 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A716B3E91777D83F001C3026 = {
+			isa = PBXGroup;
+			children = (
+				A7E465E3177C81EA005493E1 /* Vendor */,
+				A716B3FB1777D840001C3026 /* TBMemo */,
+				A716B3F41777D83F001C3026 /* Frameworks */,
+				A716B3F31777D83F001C3026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A716B3F31777D83F001C3026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A716B3F21777D83F001C3026 /* TBMemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A716B3F41777D83F001C3026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A759E77E1779DC1700FBDD2A /* CoreData.framework */,
+				A716B3F51777D83F001C3026 /* UIKit.framework */,
+				A716B3F71777D840001C3026 /* Foundation.framework */,
+				A716B3F91777D840001C3026 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A716B3FB1777D840001C3026 /* TBMemo */ = {
+			isa = PBXGroup;
+			children = (
+				A716B40D1777D840001C3026 /* MainStoryboard.storyboard */,
+				A716B4041777D840001C3026 /* TBAppDelegate.h */,
+				A716B4051777D840001C3026 /* TBAppDelegate.m */,
+				A716B4101777D840001C3026 /* TBViewController.h */,
+				A716B4111777D840001C3026 /* TBViewController.m */,
+				A70A20A0177A8FCA00D1251B /* TBMemoViewController.h */,
+				A70A20A1177A8FCA00D1251B /* TBMemoViewController.m */,
+				A759E7741779DAFE00FBDD2A /* Models */,
+				A716B3FC1777D840001C3026 /* Supporting Files */,
+			);
+			path = TBMemo;
+			sourceTree = "<group>";
+		};
+		A716B3FC1777D840001C3026 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A716B3FD1777D840001C3026 /* TBMemo-Info.plist */,
+				A716B3FE1777D840001C3026 /* InfoPlist.strings */,
+				A716B4011777D840001C3026 /* main.m */,
+				A716B4031777D840001C3026 /* TBMemo-Prefix.pch */,
+				A716B4071777D840001C3026 /* Default.png */,
+				A716B4091777D840001C3026 /* Default@2x.png */,
+				A716B40B1777D840001C3026 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A759E7741779DAFE00FBDD2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A759E780177A61F800FBDD2A /* TBStoreManager.h */,
+				A759E781177A61F800FBDD2A /* TBStoreManager.m */,
+				A759E7751779DB2400FBDD2A /* TBModel.xcdatamodeld */,
+				A759E77B1779DBC700FBDD2A /* Memo.h */,
+				A759E77C1779DBC700FBDD2A /* Memo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A7E465E3177C81EA005493E1 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A790E84D177D84C3009D404F /* UITextView+MessagesKeyboard.h */,
+				A790E84E177D84C3009D404F /* UITextView+MessagesKeyboard.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A716B3F11777D83F001C3026 /* TBMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A716B4151777D840001C3026 /* Build configuration list for PBXNativeTarget "TBMemo" */;
+			buildPhases = (
+				A716B3EE1777D83F001C3026 /* Sources */,
+				A716B3EF1777D83F001C3026 /* Frameworks */,
+				A716B3F01777D83F001C3026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBMemo;
+			productName = TBMemo;
+			productReference = A716B3F21777D83F001C3026 /* TBMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A716B3EA1777D83F001C3026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TB;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = tanB;
+			};
+			buildConfigurationList = A716B3ED1777D83F001C3026 /* Build configuration list for PBXProject "TBMemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A716B3E91777D83F001C3026;
+			productRefGroup = A716B3F31777D83F001C3026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A716B3F11777D83F001C3026 /* TBMemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A716B3F01777D83F001C3026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A716B4001777D840001C3026 /* InfoPlist.strings in Resources */,
+				A716B4081777D840001C3026 /* Default.png in Resources */,
+				A716B40A1777D840001C3026 /* Default@2x.png in Resources */,
+				A716B40C1777D840001C3026 /* Default-568h@2x.png in Resources */,
+				A716B40F1777D840001C3026 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A716B3EE1777D83F001C3026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A716B4021777D840001C3026 /* main.m in Sources */,
+				A716B4061777D840001C3026 /* TBAppDelegate.m in Sources */,
+				A716B4121777D840001C3026 /* TBViewController.m in Sources */,
+				A759E7771779DB2400FBDD2A /* TBModel.xcdatamodeld in Sources */,
+				A759E77D1779DBC700FBDD2A /* Memo.m in Sources */,
+				A759E782177A61F800FBDD2A /* TBStoreManager.m in Sources */,
+				A70A20A2177A8FCA00D1251B /* TBMemoViewController.m in Sources */,
+				A790E84F177D84C3009D404F /* UITextView+MessagesKeyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A716B3FE1777D840001C3026 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A716B3FF1777D840001C3026 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A716B40D1777D840001C3026 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A716B40E1777D840001C3026 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A716B4131777D840001C3026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A716B4141777D840001C3026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A716B4161777D840001C3026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TBMemo/TBMemo-Prefix.pch";
+				INFOPLIST_FILE = "TBMemo/TBMemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A716B4171777D840001C3026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TBMemo/TBMemo-Prefix.pch";
+				INFOPLIST_FILE = "TBMemo/TBMemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A716B3ED1777D83F001C3026 /* Build configuration list for PBXProject "TBMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A716B4131777D840001C3026 /* Debug */,
+				A716B4141777D840001C3026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A716B4151777D840001C3026 /* Build configuration list for PBXNativeTarget "TBMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A716B4161777D840001C3026 /* Debug */,
+				A716B4171777D840001C3026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A759E7751779DB2400FBDD2A /* TBModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A759E7761779DB2400FBDD2A /* TBModel.xcdatamodel */,
+			);
+			currentVersion = A759E7761779DB2400FBDD2A /* TBModel.xcdatamodel */;
+			path = TBModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A716B3EA1777D83F001C3026 /* Project object */;
+}
