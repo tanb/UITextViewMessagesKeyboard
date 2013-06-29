@@ -12,7 +12,7 @@
 
 @interface TBMemoViewController ()
 @property (nonatomic) UIGestureRecognizer *titleViewTapGesture;
-
+@property (nonatomic) UIView *inputAccessoryView;
 @end
 
 
@@ -34,6 +34,11 @@
     [center addObserver:self
                selector:@selector(keybaordWillHide:)
                    name:UIKeyboardWillHideNotification
+                 object:nil];
+    
+    [center addObserver:self
+               selector:@selector(keybaordDidHide:)
+                   name:UIKeyboardDidHideNotification
                  object:nil];
     
     self.titleViewTapGesture =
@@ -72,18 +77,18 @@
     self.textView.scrollIndicatorInsets = UIEdgeInsetsZero;
     self.textView.delegate = self;
 
-    CGRect accessoryViewRect = {.origin = CGPointZero, self.view.bounds.size.width, 1};
-    UIView *accessoryView = [[UIView alloc] initWithFrame:accessoryViewRect];
-    accessoryView.layer.shadowColor = [UIColor colorWithRed:1.000 green:0.273 blue:0.000 alpha:1.000].CGColor;
-    accessoryView.layer.shadowOpacity = 1;
-    accessoryView.layer.shadowRadius = 3;
-    accessoryView.layer.shadowOffset = CGSizeMake(0, -1);
-    accessoryView.layer.shouldRasterize = YES;
-    accessoryView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
-    accessoryView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    accessoryView.backgroundColor = [UIColor redColor];
-    self.textView.inputAccessoryView = accessoryView;
-    
+    CGRect accessoryViewRect = {0, self.view.bounds.size.height - 1, self.view.bounds.size.width, 1};
+    self.inputAccessoryView = [[UIView alloc] initWithFrame:accessoryViewRect];
+    self.inputAccessoryView.layer.shadowColor = [UIColor colorWithRed:1.000 green:0.273 blue:0.000 alpha:1.000].CGColor;
+    self.inputAccessoryView.layer.shadowOpacity = 1;
+    self.inputAccessoryView.layer.shadowRadius = 3;
+    self.inputAccessoryView.layer.shadowOffset = CGSizeMake(0, -1);
+    self.inputAccessoryView.layer.shouldRasterize = YES;
+    self.inputAccessoryView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
+    self.inputAccessoryView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    self.inputAccessoryView.backgroundColor = [UIColor redColor];
+    self.textView.inputAccessoryView = self.inputAccessoryView;
+    [self.view addSubview:self.inputAccessoryView];
     
     self.timestampLabel = [UILabel new];
     self.timestampLabel.frame = CGRectMake(0, -2, self.textView.bounds.size.width, TOP_MARGIN);
@@ -293,6 +298,12 @@
 {
     if (![self.textView isFirstResponder]) return;
 
+    CGRect accessoryViewRect = {0, self.view.bounds.size.height - 1, self.view.bounds.size.width, 1};
+
+    self.inputAccessoryView.frame = accessoryViewRect;
+
+    [self.view addSubview:self.inputAccessoryView];
+    
     // Get userInfo
     NSDictionary *userInfo;
     userInfo = [notification userInfo];
@@ -315,6 +326,13 @@
                      completion:nil];
 }
 
+- (void)keybaordDidHide:(NSNotification *)notification
+{
+    CGRect accessoryViewRect = {0, self.view.bounds.size.height - 1, self.view.bounds.size.width, 1};    
+    self.inputAccessoryView.frame = accessoryViewRect;
+
+    [self.view addSubview:self.inputAccessoryView];
+}
 
 #pragma mark - UIAlertViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
