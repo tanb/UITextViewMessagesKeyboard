@@ -71,7 +71,11 @@
 
 - (UIView *)uiKeyboard
 {
-    return self.inputAccessoryView.superview;    
+    id view = self.inputAccessoryView.superview;
+    if ([view isKindOfClass:NSClassFromString(@"UIPeripheralHostView")]) {
+        return view;
+    }
+    return nil;
 }
 
 - (CGRect)uiKeyboardOriginalRect
