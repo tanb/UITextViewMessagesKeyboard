@@ -51,9 +51,7 @@
 }
 
 - (void)scrollViewDidScrollProcedure:(UIScrollView *)scrollView
-{
-    if (scrollView.decelerating) return;
-    
+{    
     if (scrollView.panGestureRecognizer.state == UIGestureRecognizerStatePossible) return;
 
     UIView *keyboard = self.uiKeyboard;
@@ -68,7 +66,7 @@
         orientation == UIInterfaceOrientationPortraitUpsideDown) {
         position = location.y;
     }
-    
+
     if (position > originalRect.origin.y) {
         CGRect kbRect = keyboard.frame;
         kbRect.origin.y  = position;
