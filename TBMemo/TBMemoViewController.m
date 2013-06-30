@@ -78,6 +78,7 @@
     self.textView.contentInset = UIEdgeInsetsMake(TOP_MARGIN, 0, 0, 0);
     self.textView.scrollIndicatorInsets = UIEdgeInsetsZero;
     self.textView.delegate = self;
+    self.textView.alwaysBounceVertical = YES;
     
     self.timestampLabel = [UILabel new];
     self.timestampLabel.frame = CGRectMake(0, -2, self.textView.bounds.size.width, TOP_MARGIN);
