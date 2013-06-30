@@ -12,7 +12,7 @@
 
 - (void)scrollViewWillBeginDeceleratingProcedure
 {
-    UIView *keyboard = [UIResponder uiKeyboard];
+    UIView *keyboard = self.uiKeyboard;
     CGRect originalRect = [UIResponder originalRectForKeyboard:keyboard];
     if (keyboard.frame.origin.y > originalRect.origin.y) return;
     keyboard.frame = originalRect;
@@ -20,7 +20,7 @@
 
 - (void)scrollViewWillEndDraggingProcedureWithVelocity:(CGPoint)velocity
 {
-    UIView *keyboard = [UIResponder uiKeyboard];
+    UIView *keyboard = self.uiKeyboard;
     CGRect originalRect = [UIResponder originalRectForKeyboard:keyboard];
 
     if (velocity.y < -1) {
@@ -56,7 +56,7 @@
     
     if (scrollView.panGestureRecognizer.state == UIGestureRecognizerStatePossible) return;
 
-    UIView *keyboard = [UIResponder uiKeyboard];
+    UIView *keyboard = self.uiKeyboard;
     CGRect originalRect = [UIResponder originalRectForKeyboard:keyboard];
 
     UIWindow *mainWindow = [UIApplication sharedApplication].delegate.window;
@@ -78,7 +78,7 @@
     }
 }
 
-+ (UIView *)uiKeyboard
+- (UIView *)uiKeyboard
 {
     for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
         if ([window isKindOfClass:NSClassFromString(@"UITextEffectsWindow")]) {

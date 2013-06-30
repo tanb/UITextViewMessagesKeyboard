@@ -12,6 +12,4 @@
 - (void)scrollViewWillEndDraggingProcedureWithVelocity:(CGPoint)velocity;
 - (void)scrollViewDidScrollProcedure:(UIScrollView *)scrollView;
 
-+ (UIView *)uiKeyboard;
-
 @end
