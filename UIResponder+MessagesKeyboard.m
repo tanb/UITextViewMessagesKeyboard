@@ -80,6 +80,13 @@
 
 - (UIView *)uiKeyboard
 {
+    if (self.inputAccessoryView) {
+        id view = self.inputAccessoryView.superview;
+        if ([view isKindOfClass:NSClassFromString(@"UIPeripheralHostView")]) {
+            return view;
+        }
+    }
+
     for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
         if ([window isKindOfClass:NSClassFromString(@"UITextEffectsWindow")]) {
             for (UIView *view in window.subviews) {
