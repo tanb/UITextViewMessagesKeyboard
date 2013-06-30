@@ -61,10 +61,17 @@
 
     UIWindow *mainWindow = [UIApplication sharedApplication].delegate.window;
     CGPoint location = [scrollView.panGestureRecognizer locationInView:mainWindow];
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     
-    if (location.y > originalRect.origin.y) {
+    CGFloat position = location.x;
+    if (orientation == UIInterfaceOrientationPortrait ||
+        orientation == UIInterfaceOrientationPortraitUpsideDown) {
+        position = location.y;
+    }
+    
+    if (position > originalRect.origin.y) {
         CGRect kbRect = keyboard.frame;
-        kbRect.origin.y  = location.y;
+        kbRect.origin.y  = position;
         keyboard.frame = kbRect;
     } else {
         keyboard.frame = originalRect;
