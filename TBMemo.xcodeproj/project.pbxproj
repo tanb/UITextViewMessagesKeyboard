@@ -24,7 +24,6 @@
 		A759E77D1779DBC700FBDD2A /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = A759E77C1779DBC700FBDD2A /* Memo.m */; };
 		A759E77F1779DC1700FBDD2A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A759E77E1779DC1700FBDD2A /* CoreData.framework */; };
 		A759E782177A61F800FBDD2A /* TBStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A759E781177A61F800FBDD2A /* TBStoreManager.m */; };
-		A790E84F177D84C3009D404F /* UITextView+MessagesKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = A790E84E177D84C3009D404F /* UITextView+MessagesKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +53,6 @@
 		A759E77E1779DC1700FBDD2A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A759E780177A61F800FBDD2A /* TBStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBStoreManager.h; sourceTree = "<group>"; };
 		A759E781177A61F800FBDD2A /* TBStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBStoreManager.m; sourceTree = "<group>"; };
-		A790E84D177D84C3009D404F /* UITextView+MessagesKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+MessagesKeyboard.h"; sourceTree = "<group>"; };
-		A790E84E177D84C3009D404F /* UITextView+MessagesKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+MessagesKeyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +144,6 @@
 		A7E465E3177C81EA005493E1 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				A790E84D177D84C3009D404F /* UITextView+MessagesKeyboard.h */,
-				A790E84E177D84C3009D404F /* UITextView+MessagesKeyboard.m */,
 				A702BE2B177FEDAD00245D79 /* UIResponder+MessagesKeyboard.h */,
 				A702BE2C177FEDAD00245D79 /* UIResponder+MessagesKeyboard.m */,
 			);
@@ -229,7 +224,6 @@
 				A759E77D1779DBC700FBDD2A /* Memo.m in Sources */,
 				A759E782177A61F800FBDD2A /* TBStoreManager.m in Sources */,
 				A70A20A2177A8FCA00D1251B /* TBMemoViewController.m in Sources */,
-				A790E84F177D84C3009D404F /* UITextView+MessagesKeyboard.m in Sources */,
 				A702BE2D177FEDAD00245D79 /* UIResponder+MessagesKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
