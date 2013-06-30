@@ -8,6 +8,8 @@
 
 #import "TBMemoViewController.h"
 #import "TBStoreManager.h"
+#import "UIResponder+MessagesKeyboard.h"
+
 #define TOP_MARGIN 10
 
 @interface TBMemoViewController ()
@@ -51,7 +53,7 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [self.textView scrollViewDidScrollProcedure];
+    [self.textView scrollViewDidScrollProcedure:scrollView];
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView
@@ -76,19 +78,6 @@
     self.textView.contentInset = UIEdgeInsetsMake(TOP_MARGIN, 0, 0, 0);
     self.textView.scrollIndicatorInsets = UIEdgeInsetsZero;
     self.textView.delegate = self;
-
-    CGRect accessoryViewRect = {0, self.view.bounds.size.height - 1, self.view.bounds.size.width, 1};
-    self.inputAccessoryView = [[UIView alloc] initWithFrame:accessoryViewRect];
-    self.inputAccessoryView.layer.shadowColor = [UIColor colorWithRed:1.000 green:0.273 blue:0.000 alpha:1.000].CGColor;
-    self.inputAccessoryView.layer.shadowOpacity = 1;
-    self.inputAccessoryView.layer.shadowRadius = 3;
-    self.inputAccessoryView.layer.shadowOffset = CGSizeMake(0, -1);
-    self.inputAccessoryView.layer.shouldRasterize = YES;
-    self.inputAccessoryView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
-    self.inputAccessoryView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-    self.inputAccessoryView.backgroundColor = [UIColor redColor];
-    self.textView.inputAccessoryView = self.inputAccessoryView;
-    [self.view addSubview:self.inputAccessoryView];
     
     self.timestampLabel = [UILabel new];
     self.timestampLabel.frame = CGRectMake(0, -2, self.textView.bounds.size.width, TOP_MARGIN);
@@ -102,6 +91,19 @@
     if (textViewContentView) {
         [textViewContentView addSubview:self.timestampLabel];
     }
+    
+    
+    CGRect accessoryViewRect = {0, self.view.bounds.size.height - 1, self.view.bounds.size.width, 1};
+    self.inputAccessoryView = [[UIView alloc] initWithFrame:accessoryViewRect];
+    self.inputAccessoryView.layer.shadowColor = [UIColor colorWithRed:1.000 green:0.273 blue:0.000 alpha:1.000].CGColor;
+    self.inputAccessoryView.layer.shadowOpacity = 1;
+    self.inputAccessoryView.layer.shadowRadius = 3;
+    self.inputAccessoryView.layer.shadowOffset = CGSizeMake(0, -1);
+    self.inputAccessoryView.layer.shouldRasterize = YES;
+    self.inputAccessoryView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
+    self.inputAccessoryView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    self.inputAccessoryView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.inputAccessoryView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -299,9 +301,7 @@
     if (![self.textView isFirstResponder]) return;
 
     CGRect accessoryViewRect = {0, self.view.bounds.size.height - 1, self.view.bounds.size.width, 1};
-
     self.inputAccessoryView.frame = accessoryViewRect;
-
     [self.view addSubview:self.inputAccessoryView];
     
     // Get userInfo
@@ -330,7 +330,6 @@
 {
     CGRect accessoryViewRect = {0, self.view.bounds.size.height - 1, self.view.bounds.size.width, 1};    
     self.inputAccessoryView.frame = accessoryViewRect;
-
     [self.view addSubview:self.inputAccessoryView];
 }
 
